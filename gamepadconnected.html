@@ -1,7 +1,9 @@
 <body>
    <br>
    <br>
-    <h1>No Controller Connected</h1>
+    <div style="text-align:center;"> No Controller Connected
+    </div>
+  </h1>
 </body>
 
 <script type="text/javascript">
@@ -18,6 +20,7 @@ setInterval(() => {
         document.body.innerHTML = ""; // reset page
         myGamepad.buttons.map(e => e.pressed).forEach((isPressed, buttonIndex) => {
             if(isPressed) {
+                 console.log("Gamepad button pressed============================>>>>>>>>>>>>>>>>>>>.");
                 // button is pressed; indicate this on the page
                 document.body.innerHTML += `<h1>Button ${buttonIndex} is pressed</h1>`;
             }
