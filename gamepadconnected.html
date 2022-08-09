@@ -8,11 +8,14 @@
     </div>
   </h1>
 </body>
-
+/*
 <script type="text/javascript">
 // global gamepad object
 let gamepadIndex;
 window.addEventListener('gamepadconnected', (event) => {
+  console.log("Gamepad connected at index %d: %s. %d buttons, %d axes.",
+  e.gamepad.index, e.gamepad.id,
+  e.gamepad.buttons.length, e.gamepad.axes.length);
     gamepadIndex = event.gamepad.index;
 });
 
@@ -29,6 +32,9 @@ setInterval(() => {
             }
         })
     }
+   else {
+        console.log("Gamepad Undefined");
+        }
 }, 100) // print buttons that are pressed 10 times per second
 </script>
-
+*/
