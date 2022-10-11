@@ -19,7 +19,8 @@ setInterval(() => {
 		document.body.innerHTML = ""; // reset page
 
 		myGamepad.buttons.map(e => e.pressed).forEach((isPressed, buttonIndex) => {
-                          console.log("GamePad Button Button Num=" + buttonIndex);
+			if (myGamepad.buttons[16].value > 0 ) console.log("16  button !!!);
+                         // console.log("GamePad Button Button Num=" + buttonIndex);
 			if(isPressed) {
 				               console.log("Gamepad Key numer=" + buttonIndex);
 						console.log(`Is Button One Pressed? ${myGamepad.buttons[0].pressed}`);
