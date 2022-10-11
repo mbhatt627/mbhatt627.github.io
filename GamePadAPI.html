@@ -18,6 +18,7 @@ setInterval(() => {
 		myGamepad.buttons.map(e => e.pressed).forEach((isPressed, buttonIndex) => {
 
 			if(isPressed) {
+				               console.log("Gamepad Key numer=%d",buttonIndex);
 						console.log(`Is Button One Pressed? ${myGamepad.buttons[0].pressed}`);
 				console.log(`Is Button TWO Pressed? ${myGamepad.buttons[1].pressed}`);
 				console.log(`Is Button 16 Pressed? ${myGamepad.buttons[15].pressed}`);
