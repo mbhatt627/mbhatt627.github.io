@@ -19,7 +19,7 @@ setInterval(() => {
 		document.body.innerHTML = ""; // reset page
 
 		myGamepad.buttons.map(e => e.pressed).forEach((isPressed, buttonIndex) => {
-			if (myGamepad.buttons[16].value > 0 ) { console.log("16  button !!!); }
+			if (myGamepad.buttons[16].value > 0 ) { console.log("16  button !!!"); }
                          // console.log("GamePad Button Button Num=" + buttonIndex);
 			if(isPressed) {
 				               console.log("Gamepad Key numer=" + buttonIndex);
