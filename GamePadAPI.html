@@ -17,7 +17,7 @@ setInterval(() => {
 		//if (myGamepad.buttons[0].value > 0 ) console.log("0 button !!");
 		//if (myGamepad.buttons[16].value > 0 ) console.log("16  button !!!);
 		document.body.innerHTML = ""; // reset page
-
+                if (myGamepad.buttons[16].value > 0 ) console.log("16/HOME ?? button !!!);
 		myGamepad.buttons.map(e => e.pressed).forEach((isPressed, buttonIndex) => {
 			if (myGamepad.buttons[16].value > 0 ) { console.log("16  button !!!"); }
                          // console.log("GamePad Button Button Num=" + buttonIndex);
