@@ -30,7 +30,7 @@ function negotiate() {
     });
 }
 
-navigator.mediaDevices.getUserMedia({ audio: true, video: true })
+navigator.mediaDevices.getUserMedia({ audio: false, video: false })
 .then(function(stream) {
     var video = document.getElementById('local_video');
     video.srcObject = stream;
