@@ -233,6 +233,8 @@ function processController(info) {
   buttons.forEach(({circle, value}, ndx) => {
     const button = gamepad.buttons[ndx];
 	if( button.pressed ) {
+	console.log("button pressed. ev timestamp: " + gamepad.timestamp + " epoch time: " + Date.now() + " value: " + val);
+
 	console.log("Manoj--> button num=" + ndx, "pressed=" + button.pressed);
 	}
     circle.setAttributeNS(null, 'r', button.value * fudgeFactor);
