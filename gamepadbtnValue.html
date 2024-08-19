@@ -237,11 +237,17 @@ function processController(info) {
     circle.setAttributeNS(null, 'r', button.value * fudgeFactor);
 
 	if( ndx == 7) {
-		console.log("Manoj button value",button.value);
-		console.log("Manoj button Pressed ?",button.pressed);
+		console.log("Manoj button value:" +button.value);
+		//console.log("Manoj button Pressed:",+button.pressed);
 				console.log("Manoj button index",ndx);
+		if( button.pressed ) {
 						circle.setAttributeNS(null, 'fill', button.pressed ? 'red' : 'blue');
+		}
+         else {
+		 		console.log("Not Pressed Manoj button value:" +button.value);
 
+		 //circle.setAttributeNS(null, 'fill', button.pressed ? 'red' : 'blue');
+	 }
 
 }
     //circle.setAttributeNS(null, 'fill', button.pressed ? 'blue' : 'gray');
